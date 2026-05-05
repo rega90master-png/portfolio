@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fake Booking System | حجز مواعيد</title>
+    <meta
+      name="description"
+      content="نظام حجز مواعيد تجريبي لعيادة مع عرض المواعيد المتاحة وحفظ البيانات في Local Storage."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="page container">
+      <header class="hero">
+        <p class="tag">Fake Booking System</p>
+        <h1>احجز موعدك في عيادة Balance Care</h1>
+        <p>
+          اختار اليوم والوقت المناسب، واحجز فورًا. النظام تجريبي وبيحفظ بيانات
+          الحجز في المتصفح باستخدام Local Storage.
+        </p>
+      </header>
+
+      <section class="grid">
+        <article class="card">
+          <h2>فورم الحجز</h2>
+          <form id="bookingForm" class="booking-form" novalidate>
+            <label for="clientName">الاسم</label>
+            <input
+              id="clientName"
+              name="clientName"
+              type="text"
+              placeholder="اكتب اسمك بالكامل"
+              required
+            />
+
+            <label for="bookingDate">التاريخ</label>
+            <input id="bookingDate" name="bookingDate" type="date" required />
+
+            <label for="bookingTime">الوقت</label>
+            <select id="bookingTime" name="bookingTime" required>
+              <option value="">اختار الوقت المناسب</option>
+            </select>
+
+            <button type="submit" class="btn-primary">تأكيد الحجز</button>
+          </form>
+          <p id="confirmationMessage" class="message" aria-live="polite"></p>
+        </article>
+
+        <article class="card">
+          <h2>المواعيد المتاحة</h2>
+          <p class="subline">
+            التاريخ المختار:
+            <strong id="selectedDateLabel">--</strong>
+          </p>
+          <ul id="availableSlots" class="slots"></ul>
+        </article>
+      </section>
+
+      <section class="card bookings">
+        <div class="bookings-head">
+          <h2>الحجوزات المؤكدة</h2>
+          <button id="clearAllBtn" type="button" class="btn-ghost">
+            مسح كل الحجوزات
+          </button>
+        </div>
+        <ul id="bookedAppointments" class="booked-list"></ul>
+      </section>
+    </main>
+  </body>
+</html>

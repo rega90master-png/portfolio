@@ -1,0 +1,32 @@
+<svg width="760" height="860" viewBox="0 0 760 860" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="75" y1="42" x2="670" y2="810" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1F3648"/>
+      <stop offset="1" stop-color="#102230"/>
+    </linearGradient>
+    <linearGradient id="shirt" x1="250" y1="440" x2="512" y2="784" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1D8E8F"/>
+      <stop offset="1" stop-color="#115F69"/>
+    </linearGradient>
+    <radialGradient id="face" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(377 294) rotate(90) scale(148)">
+      <stop stop-color="#FFD8B4"/>
+      <stop offset="1" stop-color="#D6A479"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="14" y="14" width="732" height="832" rx="42" fill="url(#bg)" stroke="#2E5165" stroke-width="2"/>
+
+  <circle cx="378" cy="300" r="152" fill="url(#face)"/>
+  <path d="M233 714C251 590 305 528 380 528C455 528 509 590 527 714V792H233V714Z" fill="url(#shirt)"/>
+  <path d="M246 266C246 190 304 138 378 138C452 138 510 190 510 266C510 294 502 319 487 340C476 282 430 235 378 235C326 235 280 282 269 340C254 319 246 294 246 266Z" fill="#132A3A"/>
+  <circle cx="332" cy="304" r="9" fill="#2B1A12"/>
+  <circle cx="424" cy="304" r="9" fill="#2B1A12"/>
+  <path d="M336 357C352 370 404 370 420 357" stroke="#8A4E35" stroke-width="7" stroke-linecap="round"/>
+  <path d="M301 280C313 270 334 266 348 272" stroke="#233643" stroke-width="8" stroke-linecap="round"/>
+  <path d="M408 272C422 266 443 270 455 280" stroke="#233643" stroke-width="8" stroke-linecap="round"/>
+
+  <rect x="240" y="52" width="280" height="64" rx="32" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.16)"/>
+  <text x="380" y="93" text-anchor="middle" fill="#D8ECFF" font-family="Segoe UI, Tahoma, sans-serif" font-size="24" font-weight="700">
+    photo
+  </text>
+</svg>

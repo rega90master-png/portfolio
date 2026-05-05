@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | Company View</title>
+    <meta
+      name="description"
+      content="Dashboard بسيط بشكل شركات: بطاقات أرقام، مخططات، وSidebar."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;700;800&family=Manrope:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="brand-mark">C</span>
+          <div>
+            <strong>CoreMetric</strong>
+            <small>Business Suite</small>
+          </div>
+        </div>
+
+        <nav class="menu">
+          <a class="active" href="#">Dashboard</a>
+          <a href="#">Analytics</a>
+          <a href="#">Sales</a>
+          <a href="#">Customers</a>
+          <a href="#">Reports</a>
+          <a href="#">Settings</a>
+        </nav>
+
+        <div class="side-card">
+          <p>هدف الربع الحالي</p>
+          <h4>75% مكتمل</h4>
+          <span>أداء الفريق أعلى من الشهر الماضي</span>
+        </div>
+      </aside>
+
+      <main class="content">
+        <header class="topbar">
+          <div>
+            <p class="muted">نظرة عامة</p>
+            <h1>لوحة التحكم</h1>
+          </div>
+          <button class="action-btn" type="button">تصدير التقرير</button>
+        </header>
+
+        <section class="metrics-grid">
+          <article class="metric-card">
+            <p class="metric-title">إجمالي المستخدمين</p>
+            <p class="metric-value" data-target="12840" data-format="number">0</p>
+            <span class="metric-trend up">+12.4% هذا الشهر</span>
+          </article>
+          <article class="metric-card">
+            <p class="metric-title">إجمالي المبيعات</p>
+            <p class="metric-value" data-target="364200" data-format="currency">0</p>
+            <span class="metric-trend up">+8.1% هذا الشهر</span>
+          </article>
+          <article class="metric-card">
+            <p class="metric-title">عملاء جدد</p>
+            <p class="metric-value" data-target="1240" data-format="number">0</p>
+            <span class="metric-trend up">+5.7% هذا الشهر</span>
+          </article>
+          <article class="metric-card">
+            <p class="metric-title">معدل التحويل</p>
+            <p class="metric-value" data-target="4.8" data-format="percent">0</p>
+            <span class="metric-trend down">-0.6% هذا الأسبوع</span>
+          </article>
+        </section>
+
+        <section class="charts-grid">
+          <article class="panel panel-large">
+            <div class="panel-head">
+              <h2>المبيعات الشهرية</h2>
+              <span>آخر 6 شهور</span>
+            </div>
+            <canvas id="salesChart" aria-label="مخطط المبيعات الشهرية"></canvas>
+          </article>
+
+          <article class="panel panel-large">
+            <div class="panel-head">
+              <h2>اكتساب المستخدمين</h2>
+              <span>متوسط أسبوعي</span>
+            </div>
+            <canvas id="usersChart" aria-label="مخطط اكتساب المستخدمين"></canvas>
+          </article>
+
+          <article class="panel">
+            <div class="panel-head">
+              <h2>مصادر الزيارات</h2>
+              <span>اليوم</span>
+            </div>
+            <canvas id="trafficChart" aria-label="مخطط مصادر الزيارات"></canvas>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

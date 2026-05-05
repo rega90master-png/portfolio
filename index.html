@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | رياض محمد رياض</title>
+    <meta
+      name="description"
+      content="Portfolio احترافي لرياض محمد رياض مع Dark Mode، أنيميشن، وتأثيرات Hover وروابط للمشاريع."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=Sora:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="theme-dark">
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="site-header container">
+      <a href="#" class="logo">RYAD.dev</a>
+      <nav class="nav-links" aria-label="التنقل">
+        <a href="#about">عني</a>
+        <a href="#projects">المشاريع</a>
+        <a href="#contact">تواصل</a>
+      </nav>
+      <button id="themeToggle" class="theme-toggle" type="button" aria-label="تبديل المظهر">
+        <span id="themeLabel">Light Mode</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero container reveal">
+        <div class="hero-copy">
+          <p class="eyebrow">PORTFOLIO 2026</p>
+          <h1>
+            أنا <span>رياض محمد رياض</span><br />
+            مطور واجهات وتطبيقات ويب
+          </h1>
+          <p class="hero-text">
+            بتعلم البرمجة بقالي <strong>3 سنين</strong>، وبشتغل على بناء تجارب
+            رقمية سريعة وواضحة ومريحة للمستخدم. بحب أحوّل الأفكار لمنتجات شكلها
+            قوي وأداؤها ثابت.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">شوف شغلي</a>
+            <a class="btn btn-ghost" href="#contact">تواصل معايا</a>
+          </div>
+        </div>
+
+        <div class="hero-photo" data-tilt>
+          <img src="assets/photo.svg" alt="صورة شخصية لرياض محمد رياض" />
+          <div class="photo-badge">
+            <strong>3+</strong>
+            <span>سنين تعلم برمجة</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="container section reveal">
+        <div class="section-head">
+          <p class="section-kicker">About Me</p>
+          <h2>نبذة سريعة</h2>
+        </div>
+        <div class="about-grid">
+          <article class="card">
+            <h3>أنا بشتغل إزاي؟</h3>
+            <p>
+              بركز على clean code، تنظيم الملفات، وتجربة استخدام سهلة. بحب
+              التفاصيل الصغيرة زي الـ micro-interactions لأنها بتفرق في الانطباع
+              النهائي.
+            </p>
+          </article>
+          <article class="card">
+            <h3>معلومات عني (وهمية)</h3>
+            <ul>
+              <li>مقيم في محافظة الشرقيه-مركز فاقوس-  مصر</li>
+              <li>متاح للعمل الحر والمشاريع قصيرة المدى.</li>
+              <li>مهتم بمجال SaaS وواجهات الـ Dashboard.</li>
+              <li>هدفي الحالي: بناء منتجات كاملة Full-Stack.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Stack مفضل</h3>
+            <div class="chips">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>React</span>
+              <span>Node.js</span>
+              <span>UI/UX</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="container section reveal">
+        <div class="section-head">
+          <p class="section-kicker">Projects</p>
+          <h2>لينكات لأعمالي</h2>
+        </div>
+        <div class="projects-grid">
+          <a class="project-card" href="../Landing%20Page/index.html">
+            <h3>Landing Page</h3>
+            <p>صفحة إعلانية احترافية لمنتج مع Animations وScroll effects.</p>
+            <span>فتح المشروع</span>
+          </a>
+          <a class="project-card" href="../Fake%20Booking%20System/index.html">
+            <h3>Fake Booking System</h3>
+            <p>موقع حجز مواعيد بواجهة نظيفة مع حفظ بيانات في Local Storage.</p>
+            <span>فتح المشروع</span>
+          </a>
+          <a class="project-card" href="../Dashboard/index.html">
+            <h3>Dashboard</h3>
+            <p>لوحة تحكم بشكل شركات مع Cards للأرقام وCharts بـ Chart.js.</p>
+            <span>فتح المشروع</span>
+          </a>
+        </div>
+      </section>
+
+      <section id="contact" class="container section reveal">
+        <div class="contact-card">
+          <div>
+            <p class="section-kicker">Contact</p>
+            <h2>جاهز أشارك في مشروعك القادم</h2>
+            <p>البيانات دي وهمية مؤقتًا وانت تقدر تعدلها بسهولة بعد كده.</p>
+          </div>
+          <ul class="contact-list">
+            <li><strong>Email:</strong> rega.90master@gmail.com</li>
+            <li><strong>Phone:</strong> +20 1065531437</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Riyad Mohamed Riyad. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<svg width="940" height="620" viewBox="0 0 940 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="panel" x1="120" y1="40" x2="860" y2="560" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#17374A"/>
+      <stop offset="1" stop-color="#0A1E28"/>
+    </linearGradient>
+    <linearGradient id="budBody" x1="0" y1="0" x2="210" y2="350" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E8F5FF"/>
+      <stop offset="0.42" stop-color="#B6D7E8"/>
+      <stop offset="1" stop-color="#84A9BC"/>
+    </linearGradient>
+    <linearGradient id="stem" x1="71" y1="188" x2="126" y2="368" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DCEFFF"/>
+      <stop offset="1" stop-color="#7898AD"/>
+    </linearGradient>
+    <radialGradient id="ring" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(95 94) rotate(90) scale(45)">
+      <stop stop-color="#203E51"/>
+      <stop offset="1" stop-color="#0C2431"/>
+    </radialGradient>
+    <filter id="shadow" x="140" y="100" width="650" height="430" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="14"/>
+      <feGaussianBlur stdDeviation="18"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.0137 0 0 0 0 0.0745 0 0 0 0 0.1137 0 0 0 0.46 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1" result="shape"/>
+    </filter>
+  </defs>
+
+  <rect x="16" y="16" width="908" height="588" rx="56" fill="url(#panel)" stroke="#2D566A" stroke-width="2"/>
+
+  <circle cx="282" cy="202" r="125" fill="#28C7A8" fill-opacity="0.22"/>
+  <circle cx="662" cy="218" r="128" fill="#FFB066" fill-opacity="0.22"/>
+
+  <g filter="url(#shadow)">
+    <g transform="translate(226 122) rotate(-12)">
+      <rect x="0" y="0" width="190" height="240" rx="95" fill="url(#budBody)"/>
+      <rect x="72" y="198" width="46" height="178" rx="23" fill="url(#stem)"/>
+      <circle cx="95" cy="94" r="45" fill="url(#ring)"/>
+      <circle cx="95" cy="94" r="24" fill="#4EC6C4"/>
+      <ellipse cx="58" cy="56" rx="27" ry="13" fill="#FFFFFF" fill-opacity="0.35"/>
+    </g>
+
+    <g transform="translate(500 134) rotate(12)">
+      <rect x="0" y="0" width="190" height="240" rx="95" fill="url(#budBody)"/>
+      <rect x="72" y="198" width="46" height="178" rx="23" fill="url(#stem)"/>
+      <circle cx="95" cy="94" r="45" fill="url(#ring)"/>
+      <circle cx="95" cy="94" r="24" fill="#FFB169"/>
+      <ellipse cx="58" cy="56" rx="27" ry="13" fill="#FFFFFF" fill-opacity="0.35"/>
+    </g>
+  </g>
+
+  <rect x="64" y="526" width="812" height="28" rx="14" fill="#0C2230"/>
+  <rect x="112" y="532" width="716" height="16" rx="8" fill="#133646"/>
+</svg>
